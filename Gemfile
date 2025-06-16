@@ -63,3 +63,8 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem 'activemodel-serializers-xml'
+
+gem "bcrypt", "~> 3.1.7"
+

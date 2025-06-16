@@ -1,0 +1,54 @@
+bn:
+
+  layouts:
+    application:
+      title: "আপনার প্রাগমেটিক বুকশেলফ"
+      home: "হোম"
+      questions: "প্রশ্ন"
+      news: "খবর"
+      contact: "যোগাযোগ"
+
+
+  store:
+    index:
+      title_html: "অনলাইন দোকানে স্বাগতম"
+    product:
+      add_html: "কার্টে যোগ করুন"
+
+  carts:
+    cart:
+      title: "আপনার কার্ট"
+      empty: "কার্ট ফাঁকা করুন"
+      checkout: "চেক করুন"
+
+  number:
+    currency:
+      format:
+        unit: "৳"
+        precision: 2
+        separator: "."
+        delimiter: ","
+        format: "%u%n"
+
+  orders:
+    new:
+      legend: "অনুগ্রহ করে আপনার বিবরণ লিখুন"
+    form:
+      name: "নাম"
+      address_html: "ঠিকানা"
+      email: "ই-মেইল"
+      pay_type: "পেমেন্ট পদ্ধতি"
+      pay_prompt_html: "একটি পেমেন্ট পদ্ধতি নির্বাচন করুন"
+      submit: "অর্ডার দিন"
+      pay_types:
+        "Check": "চেক"
+        "Credit card": "ক্রেডিট কার্ড"
+        "Purchase order": "ক্রয় অর্ডার"
+    check:
+      routing_number: "রাউটিং নম্বর"
+      account_number: "অ্যাকাউন্ট নম্বর"
+    cc:
+      cc_number: "কার্ড নম্বর"
+      expiration_date: "মেয়াদোত্তীর্ণের তারিখ"
+    po:
+      po_number: "অর্ডার নম্বর"
