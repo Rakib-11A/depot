@@ -25,7 +25,20 @@
 
   <body>
     <header class="bg-green-700">
-      <%= image_tag('teslasign.jpg', class: 'object-content w-40 h-28 shadow mr-6 rounded-lg', alt: 'The Pragmatic Bookshelf') %>
+      <div class="flex items-center justify-between px-4 py-2">
+        <%= image_tag('teslasign.jpg', class: 'object-content w-40 h-28 shadow mr-6 rounded-lg', alt: 'The Pragmatic Bookshelf') %>
+
+        <aside data-controller="locale">
+          <%= form_tag store_index_path, class: 'locale' do %>
+            <%= select_tag 'set_locale',
+                           options_for_select(LANGUAGE, I18n.locale.to_s),
+                           onchange: "this.form.submit();"
+            %>
+            <%= submit_tag 'submit', data: {'locale-target' => 'submit'} %>
+          <% end %>
+        </aside>
+      </div>
+
       <h1> <%= @page_title %> </h1>
     </header>
 

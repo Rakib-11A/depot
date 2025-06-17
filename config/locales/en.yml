@@ -51,3 +51,5 @@ en:
       expiration_date: "Expiry"
     op:
       po_number: "PO #"
+
+  thanks: "Thank your for your orders"
