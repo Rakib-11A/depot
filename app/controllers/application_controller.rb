@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
   # Only allow modern browsers supporting webp images, web push, badges, import maps, CSS nesting, and CSS :has.
+  before_action :set_locale
   before_action :set_i18n_locale_from_params
   before_action :authorize
   allow_browser versions: :modern
@@ -21,5 +22,9 @@ class ApplicationController < ActionController::Base
           logger.error flash.now[:notice]
         end
       end
+    end
+
+    def set_locale
+      I18n.locale = params[:set_locale] || I18n.default_locale
     end
 end

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get "support_requests/index"
 
   get "admin" => "admin#index"
   controller :sessions do
@@ -11,6 +12,7 @@ Rails.application.routes.draw do
   # get "sessions/create"
   # get "sessions/destroy"
 
+  resources :support_requests, only: %i[ index update]
   resources :users
 
   resources :products do
