@@ -17,3 +17,8 @@ Product.create!(
   image_url: '2025.jpg',
   price: 24.95
 )
+
+User.create!(
+  name: 'dave',
+  password: Rails.application.credentials.dave_password
+)

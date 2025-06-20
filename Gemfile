@@ -71,3 +71,5 @@ gem "bcrypt", "~> 3.1.7"
 gem 'mobility'
 
 
+
+gem "pg", "~> 1.5", group: :production
